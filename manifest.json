@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+  "name": "Extension for LinkedIn",
+  "description": "Extension for LinkedIn",
+  "version": "1.0.0",
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["connect.js"]
+    }
+  ]
+}
